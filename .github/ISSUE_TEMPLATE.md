@@ -1,4 +1,4 @@
-* LyricsMaster version:
+* LyricsMaster3 version:
 * Python version:
 * Operating System:
 

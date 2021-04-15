@@ -40,7 +40,7 @@ from .utils import normalize, logger
 class LyricsProvider:
     """
     This is the base class for all Lyrics Providers. If you wish to subclass this class, you must implement all
-    the methods defined in this class to be compatible with the LyricsMaster API.
+    the methods defined in this class to be compatible with the LyricsMaster3 API.
     Requests to fetch songs are executed asynchronously for better performance.
     Tor anonymisation is provided if tor is installed on the system and a TorController is passed at instance creation.
 
@@ -88,7 +88,7 @@ class LyricsProvider:
     @abstractmethod
     def _has_lyrics(self, page):
         """
-        Must be implemented by children classes conforming to the LyricsMaster API.
+        Must be implemented by children classes conforming to the LyricsMaster3 API.
 
         Checks if the lyrics provider has the lyrics for the song or not.
 
@@ -100,7 +100,7 @@ class LyricsProvider:
     @abstractmethod
     def _has_artist(self, page):
         """
-        Must be implemented by children classes conforming to the LyricsMaster API.
+        Must be implemented by children classes conforming to the LyricsMaster3 API.
 
         Check if the artist is in the lyrics provider's database.
 
@@ -112,7 +112,7 @@ class LyricsProvider:
     @abstractmethod
     def _make_artist_url(self, artist):
         """
-        Must be implemented by children classes conforming to the LyricsMaster API.
+        Must be implemented by children classes conforming to the LyricsMaster3 API.
 
         Builds an url for the artist page of the lyrics provider.
 
@@ -124,7 +124,7 @@ class LyricsProvider:
     @abstractmethod
     def _clean_string(self, text):
         """
-        Must be implemented by children classes conforming to the LyricsMaster API.
+        Must be implemented by children classes conforming to the LyricsMaster3 API.
 
         Formats the text to conform to the lyrics provider formatting.
 
@@ -136,7 +136,7 @@ class LyricsProvider:
     @abstractmethod
     def get_albums(self, raw_artist_page):
         """
-        Must be implemented by children classes conforming to the LyricsMaster API.
+        Must be implemented by children classes conforming to the LyricsMaster3 API.
 
         Fetches the albums section in the supplied html page.
 
@@ -149,7 +149,7 @@ class LyricsProvider:
     @abstractmethod
     def get_album_infos(self, tag):
         """
-        Must be implemented by children classes conforming to the LyricsMaster API.
+        Must be implemented by children classes conforming to the LyricsMaster3 API.
 
         Extracts the Album informations from the tag
 
@@ -162,7 +162,7 @@ class LyricsProvider:
     @abstractmethod
     def get_songs(self, album):
         """
-        Must be implemented by children classes conforming to the LyricsMaster API.
+        Must be implemented by children classes conforming to the LyricsMaster3 API.
 
         Fetches the links to the songs of the supplied album.
 
@@ -174,7 +174,7 @@ class LyricsProvider:
     @abstractmethod
     def create_song(self, link, artist, album_title):
         """
-        Must be implemented by children classes conforming to the LyricsMaster API.
+        Must be implemented by children classes conforming to the LyricsMaster3 API.
 
         Creates a Song object.
 
@@ -188,7 +188,7 @@ class LyricsProvider:
     @abstractmethod
     def extract_lyrics(self, lyrics_page):
         """
-        Must be implemented by children classes conforming to the LyricsMaster API.
+        Must be implemented by children classes conforming to the LyricsMaster3 API.
 
         Extracts the lyrics from the lyrics page of the supplied song.
 
@@ -202,7 +202,7 @@ class LyricsProvider:
     @abstractmethod
     def extract_writers(self, lyrics_page):
         """
-        Must be implemented by children classes conforming to the LyricsMaster API.
+        Must be implemented by children classes conforming to the LyricsMaster3 API.
 
         Extracts the writers from the lyrics page of the supplied song.
 

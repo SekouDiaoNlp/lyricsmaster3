@@ -41,7 +41,7 @@ class Song(object):
     def save(self, folder=None):
         """
         Saves the lyrics of the song in the supplied folder.
-        If no folder is supplied, 'folder' is set to {user}/Documents/lyricsmaster/
+        If no folder is supplied, 'folder' is set to {user}/Documents/lyricsmaster3/
         The lyrics of a song are saved in the folder /artist/album/song_title.txt
 
         :param folder: string.

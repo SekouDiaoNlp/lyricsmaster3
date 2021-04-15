@@ -1,33 +1,33 @@
 ============
-LyricsMaster
+LyricsMaster3
 ============
 
 
-.. image:: https://img.shields.io/pypi/v/lyricsmaster.svg
-        :target: https://pypi.python.org/pypi/lyricsmaster
+.. image:: https://img.shields.io/pypi/v/lyricsmaster3.svg
+        :target: https://pypi.python.org/pypi/lyricsmaster3
         :alt: PyPi Status
 
-.. image:: https://img.shields.io/travis/SekouD/lyricsmaster.svg
-        :target: https://travis-ci.org/SekouD/lyricsmaster
+.. image:: https://img.shields.io/travis/SekouDiaoNLP/lyricsmaster3.svg
+        :target: https://travis-ci.org/SekouDiaoNLP/lyricsmaster3
         :alt: Linux Continuous Integration Status
 
 .. image:: https://ci.appveyor.com/api/projects/status/73bd1ct4revmlk42/branch/master?svg=true
-        :target: https://ci.appveyor.com/project/SekouD/lyricsmaster
+        :target: https://ci.appveyor.com/project/SekouDiaoNLP/lyricsmaster3
         :alt: Windows Continuous Integration Status
 
-.. image:: https://readthedocs.org/projects/lyricsmaster/badge/?version=latest
-        :target: https://lyricsmaster.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/lyricsmaster3/badge/?version=latest
+        :target: https://lyricsmaster3.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-.. image:: https://pyup.io/repos/github/SekouD/lyricsmaster/shield.svg
-        :target: https://pyup.io/repos/github/SekouD/lyricsmaster/
+.. image:: https://pyup.io/repos/github/SekouDiaoNLP/lyricsmaster3/shield.svg
+        :target: https://pyup.io/repos/github/SekouDiaoNLP/lyricsmaster3/
         :alt: Dependencies Update Status
 
-.. image:: https://codecov.io/gh/SekouD/lyricsmaster/branch/master/graph/badge.svg
-        :target: https://codecov.io/gh/SekouD/lyricsmaster
+.. image:: https://codecov.io/gh/SekouDiaoNLP/lyricsmaster3/branch/master/graph/badge.svg
+        :target: https://codecov.io/gh/SekouDiaoNLP/lyricsmaster3
         :alt: Coverage Status
 
-LyricsMaster is a library for downloading lyrics from multiple lyrics providers.
+LyricsMaster3 is a library for downloading lyrics from multiple lyrics providers.
 
 The following Lyrics Providers are supported:
 
@@ -41,7 +41,7 @@ The following Lyrics Providers are supported:
 
 
 * Free software: MIT license
-* Documentation: https://lyricsmaster.readthedocs.io.
+* Documentation: https://lyricsmaster3.readthedocs.io.
 
 
 Features

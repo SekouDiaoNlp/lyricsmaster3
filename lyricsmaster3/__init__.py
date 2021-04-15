@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-"""Top-level package for LyricsMaster."""
+"""Top-level package for LyricsMaster3."""
 
-__author__ = """SekouD"""
-__email__ = 'sekoud.python@gmail.com'
+__author__ = """SekouDiaoNLP"""
+__email__ = 'diao.sekou.nlp@gmail.com'
 __version__ = '2.8.1'
 
 from .providers import LyricWiki, AzLyrics, Genius, MusixMatch, Lyrics007

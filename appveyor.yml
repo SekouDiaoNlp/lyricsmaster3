@@ -28,9 +28,9 @@ cache:
   - '%LOCALAPPDATA%\pip\Cache -> appveyor.yml'
 
 install:
-  - ps: Invoke-WebRequest 'https://dist.torproject.org/torbrowser/8.0.8/tor-win32-0.3.5.8.zip' -OutFile C:\projects\lyricsmaster\tor-win32-0.3.5.8.zip
+  - ps: Invoke-WebRequest 'https://dist.torproject.org/torbrowser/8.0.8/tor-win32-0.3.5.8.zip' -OutFile C:\projects\lyricsmaster3\tor-win32-0.3.5.8.zip
   - ps: 7z e tor-win32-0.3.5.8.zip
-  - tor --service install -options -f C:\projects\lyricsmaster\torrc ControlPort 9051
+  - tor --service install -options -f C:\projects\lyricsmaster3\torrc ControlPort 9051
   - ps: netstat -an
   - "%PYTHON%\\python.exe -m pip install wheel"
   - "%PYTHON%\\python.exe -m pip install -U tox"
@@ -53,7 +53,7 @@ test_script:
   - "%PYTHON%\\python.exe -m pip install codecov"
   - "%PYTHON%\\python.exe -m pip install docutils"
   - "%PYTHON%\\python.exe -m pip install -r requirements.txt"
-  - "%PYTHON%\\Scripts\\py.test --cov=./lyricsmaster/"
+  - "%PYTHON%\\Scripts\\py.test --cov=./lyricsmaster3/"
   - "%PYTHON%\\Scripts\\codecov -f .coverage"
   - "%PYTHON%\\python.exe setup.py check --restructuredtext -s"
 

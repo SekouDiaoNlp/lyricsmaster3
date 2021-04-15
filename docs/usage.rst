@@ -2,10 +2,10 @@
 Usage
 =====
 
-To use LyricsMaster in a project::
+To use LyricsMaster3 in a project::
 
     .. code-block:: python
-    from lyricsmaster import LyricWiki, TorController
+    from lyricsmaster3 import LyricWiki, TorController
 
 
     # Select a provider from the supported Lyrics Providers (LyricWiki, AzLyrics, Genius etc..)
@@ -30,11 +30,11 @@ To use LyricsMaster in a project::
     album = provider.get_lyrics('2Pac', album='All eyes on me')
 
     # Fetch the lyrics from the song 'California Love' in 2pac's album 'All eyez on me'.
-    song = provider.get_lyrics('2Pac', album='All eyez on me', song='California Love)
+    song = provider.get_lyrics('2Pac', album='All eyez on me', song='California Love')
 
     # Once the lyrics are fetched, you can save them on disk.
     # The 'save()' method is implemented for Discography, Album and Song objects.
-    # By default, the lyrics are saved in {user}/Documents/lyricsmaster/
+    # By default, the lyrics are saved in {user}/Documents/lyricsmaster3/
     discography.save()
 
     # You can also supply a folder to save the lyrics in.
@@ -47,20 +47,20 @@ To use LyricsMaster in a project::
     discography = provider.get_lyrics('2Pac')
 
     # For enhanced anonymity, the TorController can renew the the Tor ciruit for each album dowloaded.
-    # For this functionnality to work, the Tor ControlPort option must be enabled in your torrc config file.
+    # For this functionality to work, the Tor ControlPort option must be enabled in your torrc config file.
     # See https://www.torproject.org/docs/tor-manual.html.en for more information.
     provider = LyricWiki(TorController(control_port=9051, password='password))
     discography = provider.get_lyrics('2Pac')
 
 
 
-To use LyricsMaster from the command line (The default Lyrics Provider is LyricWiki)::
+To use LyricsMaster3 from the command line (The default Lyrics Provider is LyricWiki)::
 
-    $ lyricsmaster <artist_name> options
+    $ lyricsmaster3 <artist_name> options
 
 Examples::
 
-    $ lyricsmaster "2Pac"
+    $ lyricsmaster3 "2Pac"
     Anonymous requests disabled. The connexion will not be anonymous.
     Downloading 2Pacalypse Now (1991)
     2Pacalypse Now (1991) succesfully downloaded
@@ -70,7 +70,7 @@ Examples::
     ...
 
 
-    $ lyricsmaster "2Pac" --provider Genius
+    $ lyricsmaster3 "2Pac" --provider Genius
     Anonymous requests disabled. The connexion will not be anonymous.
     Downloading The Rose That Grew From Concrete (Book)
     The Rose That Grew From Concrete (Book) succesfully downloaded
@@ -79,7 +79,7 @@ Examples::
     ...
 
 
-    $ lyricsmaster "2Pac" --tor 127.0.0.1
+    $ lyricsmaster3 "2Pac" --tor 127.0.0.1
     Anonymous requests enabled. The Tor circuit will change according to the Tor network defaults.
     Downloading 2Pacalypse Now (1991)
     2Pacalypse Now (1991) succesfully downloaded
@@ -89,7 +89,7 @@ Examples::
     ...
 
 
-    $ lyricsmaster "2Pac" --tor 127.0.0.1 --controlport 9051 --password password
+    $ lyricsmaster3 "2Pac" --tor 127.0.0.1 --controlport 9051 --password password
     Anonymous requests enabled. The Tor circuit will change for each album.
     New Tor circuit created
     Downloading 2Pacalypse Now (1991)

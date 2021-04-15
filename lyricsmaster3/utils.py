@@ -66,9 +66,9 @@ def set_save_folder(folder):
         Folder path.
     """
     if not folder:
-        folder = os.path.join(os.path.expanduser("~"), 'Documents', 'LyricsMaster')
+        folder = os.path.join(os.path.expanduser("~"), 'Documents', 'LyricsMaster3')
     else:
-        folder = os.path.join(folder, 'LyricsMaster')
+        folder = os.path.join(folder, 'LyricsMaster3')
     return folder
 
 

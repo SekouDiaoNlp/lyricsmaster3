@@ -1,4 +1,4 @@
-Welcome to LyricsMaster's documentation
+Welcome to LyricsMaster3's documentation
 =======================================
 
 Contents:

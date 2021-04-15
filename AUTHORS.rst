@@ -5,10 +5,10 @@ Credits
 Development Lead
 ----------------
 
-* SekouD <sekoud.python@gmail.com>
-* GPG key ID: B51D1046EF63C50B
+* SekouDiaoNLP <diao.sekou.nlp@gmail.com>
+* GPG key ID: F8BBB4208336EA8B
 
-https://github.com/SekouD/
+https://github.com/SekouDiaoNLP/
 
 Contributors
 ------------

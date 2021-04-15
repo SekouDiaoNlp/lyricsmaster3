@@ -15,7 +15,7 @@ with open('docs/usage.rst') as usage_file:
     usage = usage_file.read()
 
 requirements = [
-    'Click>=6.0',
+    'Click>=7.1',
     'lxml',
     'beautifulsoup4',
     'urllib3',
@@ -28,7 +28,7 @@ requirements = [
 
 setup_requirements = [
     'pytest'
-    # TODO(SekouD): put setup requirements (distutils extensions, etc.) here
+    # TODO(SekouDiaoNLP): put setup requirements (distutils extensions, etc.) here
 ]
 
 test_requirements = [
@@ -36,7 +36,7 @@ test_requirements = [
     'docutils',
     'pytest',
     'pytest-cov',
-    'Click>=6.0',
+    'Click>=7.1',
     'lxml',
     'beautifulsoup4',
     'requests',
@@ -48,24 +48,24 @@ test_requirements = [
 ]
 
 setup(
-    name='lyricsmaster',
+    name='lyricsmaster3',
     version='2.8.1',
-    description="LyricsMaster is a library for downloading lyrics from multiple lyrics providers. LyricWiki, AzLyrics, Genius, Lyrics007, MusixMatch and other lyrics provider are available",
+    description="LyricsMaster3 is a library for downloading lyrics from multiple lyrics providers. LyricWiki, AzLyrics, Genius, Lyrics007, MusixMatch and other lyrics provider are available",
     long_description=readme + '\n\n' + usage + '\n\n' + history,
-    author="SekouD",
-    author_email='sekoud.python@gmail.com',
-    url='https://github.com/SekouD/lyricsmaster',
-    packages=find_packages(include=['lyricsmaster']),
+    author="SekouDiaoNLP",
+    author_email='diao.sekou.nlp@gmail.com',
+    url='https://github.com/SekouDiaoNLP/lyricsmaster3',
+    packages=find_packages(include=['lyricsmaster3']),
     entry_points={
         'console_scripts': [
-            'lyricsmaster=lyricsmaster.cli:main'
+            'lyricsmaster3=lyricsmaster3.cli:main'
         ]
     },
     include_package_data=True,
     install_requires=requirements,
     license="MIT license",
     zip_safe=False,
-    keywords='lyricsmaster lyrics LyricWiki Lyrics Wikia Lyrics007 AzLyrics Genius MusixMatch Tor',
+    keywords='lyricsmaster3 lyrics LyricWiki Lyrics Wikia Lyrics007 AzLyrics Genius MusixMatch Tor',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Topic :: Communications',

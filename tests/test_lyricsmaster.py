@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Tests for `lyricsmaster` package."""
+"""Tests for `lyricsmaster3` package."""
 
 import os
 import sys
@@ -12,11 +12,11 @@ from click.testing import CliRunner
 
 from bs4 import BeautifulSoup, Tag
 
-from lyricsmaster import models
-from lyricsmaster import cli
-from lyricsmaster.providers import LyricWiki, AzLyrics, Genius, Lyrics007, \
+from lyricsmaster3 import models
+from lyricsmaster3 import cli
+from lyricsmaster3.providers import LyricWiki, AzLyrics, Genius, Lyrics007, \
     MusixMatch
-from lyricsmaster.utils import TorController, normalize
+from lyricsmaster3.utils import TorController, normalize
 
 try:
     basestring  # Python 2.7 compatibility
@@ -90,7 +90,7 @@ class TestSongs:
     song = songs[0]
 
     def test_song(self):
-        assert self.song.__repr__() == 'lyricsmaster.models.Song({0}, {1}, {2})'.format(
+        assert self.song.__repr__() == 'lyricsmaster3.models.Song({0}, {1}, {2})'.format(
             real_singer['songs'][0]['song'],
             real_singer['album'],
             real_singer['name'])
@@ -98,14 +98,14 @@ class TestSongs:
     def test_song_save(self):
         self.song.save()
         path = os.path.join(os.path.expanduser("~"), 'Documents',
-                            'LyricsMaster', normalize(real_singer['name']),
+                            'LyricsMaster3', normalize(real_singer['name']),
                             normalize(real_singer['album']),
                             'Things-Done-Changed.txt')
         assert os.path.exists(path)
         folder = os.path.join(os.path.expanduser("~"), 'Documents',
-                              'test_lyricsmaster_save')
+                              'test_lyricsmaster3_save')
         self.song.save(folder)
-        path = os.path.join(folder, 'LyricsMaster',
+        path = os.path.join(folder, 'LyricsMaster3',
                             normalize(real_singer['name']),
                             normalize(real_singer['album']),
                             'Things-Done-Changed.txt')
@@ -123,7 +123,7 @@ class TestAlbums:
         assert self.album.__idx__ == 0
         assert self.album.title == real_singer['album']
         assert self.album.artist == real_singer['name']
-        assert self.album.__repr__() == 'lyricsmaster.models.Album({0}, {1})'.format(
+        assert self.album.__repr__() == 'lyricsmaster3.models.Album({0}, {1})'.format(
             real_singer['album'],
             real_singer['name'])
 
@@ -140,7 +140,7 @@ class TestAlbums:
             album = normalize(song.album)
             title = normalize(song.title)
             path = os.path.join(os.path.expanduser("~"), 'Documents',
-                                'LyricsMaster', artist, album, title + '.txt')
+                                'LyricsMaster3', artist, album, title + '.txt')
             assert os.path.exists(path)
             with codecs.open(path, 'r', encoding='utf-8') as file:
                 assert song.lyrics == '\n'.join(file.readlines())
@@ -154,7 +154,7 @@ class TestDiscography:
     discography = models.Discography(real_singer['name'], albums)
 
     def test_discography(self):
-        assert self.discography.__repr__() == 'lyricsmaster.models.Discography({0})'.format(
+        assert self.discography.__repr__() == 'lyricsmaster3.models.Discography({0})'.format(
             real_singer['name'])
 
     def test_discography_isiter(self):
@@ -173,7 +173,7 @@ class TestDiscography:
                 album = normalize(song.album)
                 title = normalize(song.title)
                 path = os.path.join(os.path.expanduser("~"), 'Documents',
-                                    'LyricsMaster', artist, album,
+                                    'LyricsMaster3', artist, album,
                                     title + '.txt')
                 assert os.path.exists(path)
                 with codecs.open(path, 'r', encoding='utf-8') as file:

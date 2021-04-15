@@ -14,29 +14,29 @@ History
 2.8 (2019-03-31)
 -------------------
 
-* Enhanced support for utf-8 characters even when the html encoding has wrong information. (see https://github.com/SekouD/lyricsmaster/issues/211)
+* Enhanced support for utf-8 characters even when the html encoding has wrong information. (see https://github.com/SekouD/lyricsmaster3/issues/211)
 * Fixed AzLyrics bug when Artist had song but no album on the service.
 * Updated dependencies.
 
 2.7.25 (2019-03-23)
 -------------------
 
-* Enhanced support for utf-8 characters even when the html encoding has wrong information. (see https://github.com/SekouD/lyricsmaster/issues/211)
+* Enhanced support for utf-8 characters even when the html encoding has wrong information. (see https://github.com/SekouD/lyricsmaster3/issues/211)
 * Fixed MusixMatch bug when only the first sentence of some lyrics was parsed.
-* updated logger configuration to avoid repeated logs when lyricsmaster was used as a library instead of standalone.
+* updated logger configuration to avoid repeated logs when lyricsmaster3 was used as a library instead of standalone.
 * Updated dependencies.
 
 2.7.24 (2019-03-16)
 -------------------
 
-* Fixed bug when trying to download lyrics from urls containing unicode characters. (see https://github.com/SekouD/lyricsmaster/issues/211)
+* Fixed bug when trying to download lyrics from urls containing unicode characters. (see https://github.com/SekouD/lyricsmaster3/issues/211)
 * Replaced use of print() with Python logging facilities.
 * Updated dependencies.
 
 2.7.23 (2019-02-28)
 -------------------
 
-* Updated lyricsmaster to reflect changes in MusixMatch and Lyrics007 APIs.
+* Updated lyricsmaster3 to reflect changes in MusixMatch and Lyrics007 APIs.
 * Updated dependencies.
 
 2.7.22 (2018-11-18)

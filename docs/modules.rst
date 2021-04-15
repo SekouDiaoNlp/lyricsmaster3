@@ -3,28 +3,28 @@ Package Api Documentation
 =========================
 
 
-API Reference for classes in lyricsmaster.providers
+API Reference for classes in lyricsmaster3.providers
 ---------------------------------------------------
 
-.. automodule:: lyricsmaster.providers
+.. automodule:: lyricsmaster3.providers
     :member-order: bysource
     :members:
     :inherited-members:
     :show-inheritance:
 
 
-API Reference for classes in lyricsmaster.models
+API Reference for classes in lyricsmaster3.models
 ------------------------------------------------
 
-.. automodule:: lyricsmaster.models
+.. automodule:: lyricsmaster3.models
     :member-order: bysource
     :members:
 
 
-API Reference for classes in lyricsmaster.utils
+API Reference for classes in lyricsmaster3.utils
 -----------------------------------------------
 
-.. autoclass:: lyricsmaster.utils.TorController
+.. autoclass:: lyricsmaster3.utils.TorController
     :member-order: bysource
     :members:
     :inherited-members:

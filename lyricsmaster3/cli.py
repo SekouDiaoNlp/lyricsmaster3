@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-"""Console script for lyricsmaster."""
+"""Console script for lyricsmaster3."""
 
 import click
-import lyricsmaster
+import lyricsmaster3
 from .utils import TorController
 import sys
 import logging
@@ -21,7 +21,7 @@ import logging
 @click.option('--controlpath', default=None, help='Tor ControlPath.', type=click.STRING)
 @click.option('--password', default='', help='Password for Tor ControlPort.', type=click.STRING)
 def main(artist_name, provider, album, song, folder, tor, socksport, controlport, controlpath, password):
-    """Console script for lyricsmaster."""
+    """Console script for lyricsmaster3."""
     logger = logging.getLogger(__name__.split('.')[0])
 
     # create console handler and set level to debug
@@ -33,7 +33,7 @@ def main(artist_name, provider, album, song, folder, tor, socksport, controlport
     logger.addHandler(error_handler)
     logger.setLevel(logging.INFO)
     try:
-        provider = lyricsmaster.CURRENT_PROVIDERS[provider.lower()]
+        provider = lyricsmaster3.CURRENT_PROVIDERS[provider.lower()]
     except KeyError as e:
         logger.warning('The provider {0} is not supported'.format(provider))
         return
