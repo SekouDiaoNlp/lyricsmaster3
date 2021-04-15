@@ -1,3 +1,7 @@
+image:
+  - Visual Studio 2019
+  - macOS
+
 environment:
 
   matrix:
@@ -13,14 +17,20 @@ environment:
 #    Failed building wheel for gevent
 #    - PYTHON: "C:\\Python33-x64"
 #      DISTUTILS_USE_SDK: "1"
-    - PYTHON: "C:\\Python34"
-    - PYTHON: "C:\\Python34-x64"
-      DISTUTILS_USE_SDK: "1"
+#    - PYTHON: "C:\\Python34"
+#    - PYTHON: "C:\\Python34-x64"
+#      DISTUTILS_USE_SDK: "1"
 #    Build randomly fails even though all tests passed. Command exited with code -1073741819
 #    - PYTHON: "C:\\Python35"
 #    - PYTHON: "C:\\Python35-x64"
     - PYTHON: "C:\\Python36"
     - PYTHON: "C:\\Python36-x64"
+    - PYTHON: "C:\\Python37"
+    - PYTHON: "C:\\Python37-x64"
+    - PYTHON: "C:\\Python38"
+    - PYTHON: "C:\\Python38-x64"
+    - PYTHON: "C:\\Python39"
+    - PYTHON: "C:\\Python39-x64"
 
 
 cache:
