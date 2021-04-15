@@ -1,6 +1,6 @@
-============
+=============
 LyricsMaster3
-============
+=============
 
 
 .. image:: https://img.shields.io/pypi/v/lyricsmaster3.svg

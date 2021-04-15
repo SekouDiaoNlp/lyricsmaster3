@@ -4,7 +4,7 @@ Package Api Documentation
 
 
 API Reference for classes in lyricsmaster3.providers
----------------------------------------------------
+----------------------------------------------------
 
 .. automodule:: lyricsmaster3.providers
     :member-order: bysource
@@ -14,7 +14,7 @@ API Reference for classes in lyricsmaster3.providers
 
 
 API Reference for classes in lyricsmaster3.models
-------------------------------------------------
+-------------------------------------------------
 
 .. automodule:: lyricsmaster3.models
     :member-order: bysource
@@ -22,7 +22,7 @@ API Reference for classes in lyricsmaster3.models
 
 
 API Reference for classes in lyricsmaster3.utils
------------------------------------------------
+------------------------------------------------
 
 .. autoclass:: lyricsmaster3.utils.TorController
     :member-order: bysource
